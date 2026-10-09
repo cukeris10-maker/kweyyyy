@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/keyboard_bg"
+    android:padding="8dp">
+
+    <!-- Drag handle -->
+    <View
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#80FFFFFF"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Up row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <View android:layout_width="56dp" android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="▲"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/key_button_bg"
+            android:layout_margin="3dp"
+            android:padding="0dp" />
+
+        <View android:layout_width="56dp" android:layout_height="56dp" />
+    </LinearLayout>
+
+    <!-- Left / Down / Right row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="◀"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/key_button_bg"
+            android:layout_margin="3dp"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="▼"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/key_button_bg"
+            android:layout_margin="3dp"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="▶"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/key_button_bg"
+            android:layout_margin="3dp"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <!-- Space bar -->
+    <Button
+        android:id="@+id/btn_space"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="SPACE"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/key_button_bg"
+        android:layout_margin="3dp"
+        android:padding="0dp" />
+
+</LinearLayout>
